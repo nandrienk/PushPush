@@ -1,0 +1,13 @@
+{
+    "aps": {
+        "sound": "default",
+        "badge": 1,
+        "alert": {
+            "body": "PUSH",
+            "title": "YOOO"
+        }
+    },
+    "type": "CULTURAL_EVENT",
+    "eventIds": "[189313]",
+    "pushId": 1234567
+}
