@@ -29,6 +29,7 @@ class XCRunHelper {
             try process.run()
         } catch {
             completion(.failure(XCRunError.processExecuteError))
+            return
         }
         
         let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
@@ -63,6 +64,7 @@ class XCRunHelper {
             try process.run()
         } catch {
             completion(.failure(XCRunError.processExecuteError))
+            return
         }
         
         let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
