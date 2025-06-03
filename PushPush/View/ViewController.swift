@@ -84,7 +84,7 @@ private extension ViewController {
         // Clean previous devices
         simulatorSelectionPopUpButton.removeAllItems()
         
-        xcRunHelper.avaliableSimulators { [weak self] (result) in
+        xcRunHelper.availableSimulators { [weak self] (result) in
             switch result {
             case .failure(let error):
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1 , execute: {
